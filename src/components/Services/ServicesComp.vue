@@ -8,7 +8,7 @@
       :price="service.price"
       :currency="service.currency"
       v-model="service.isSelected"
-      @click="isSelected(service, price)"
+      @click="isSelected(service)"
       :class="{ isSelected: service.isSelected }"
     ></ButtonServices>
     <hr class="line" />

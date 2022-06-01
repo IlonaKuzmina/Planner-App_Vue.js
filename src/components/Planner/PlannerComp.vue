@@ -65,12 +65,12 @@ import { defineComponent } from "vue";
 import ButtonComp from "@/components/Button/ButtonComp.vue";
 import "@/components/Planner/PlannerComp.scss";
 
-// type ToDos = {
-//   id: number;
-//   title: string;
-//   isEditing: boolean;
-//   isCompleted: boolean;
-// };
+type Todos = {
+  id: number;
+  title: string;
+  isEditing: boolean;
+  isCompleted: boolean;
+};
 
 export default defineComponent({
   name: "PlannerComp",
@@ -81,14 +81,7 @@ export default defineComponent({
       newTodo: "",
       currentFilter: "",
       idForTodo: 2,
-      todos: [
-        {
-          id: 1,
-          title: "Finish",
-          isCompleted: false,
-          isEditing: false,
-        },
-      ],
+      todos: [] as Todos[],
     };
   },
 
@@ -105,9 +98,14 @@ export default defineComponent({
         isEditing: false,
       });
 
+      localStorage.setItem("todos", JSON.stringify(this.todos));
       this.newTodo = "";
       this.idForTodo++;
     },
+
+    // getTasksList() {
+    //   this.todos = JSON.parse(localStorage.getItem("todos"));
+    // },
 
     removeTodo(index: number) {
       this.todos.splice(index, 1);
