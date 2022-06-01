@@ -1,0 +1,115 @@
+.planner__container {
+  margin: 50px auto;
+  max-width: max-content;
+  border-radius: 10px;
+  border: 1px solid #420c0c;
+  padding: 15px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input__container,
+.button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.lists__container {
+  text-align: start;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input {
+  width: 100%;
+  margin: 0 15px;
+}
+
+.todo__item {
+  display: flex;
+  flex-direction: row;
+  justify-self: stretch;
+  align-items: center;
+  border: 1px solid #420c0c;
+  border-radius: 10px;
+  margin: 5px 15px;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.todo__lable {
+  margin-left: 12px;
+  width: 100%;
+  text-align: start;
+}
+
+.cancel__btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #420c0c;
+  color: #f4d3ca;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5e1414;
+    transition: 0.4s;
+  }
+}
+
+.edit__btn {
+  margin: 0 5px;
+  padding: 2px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5e1414;
+  color: #f4d3ca;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5e1414;
+    transition: 0.4s;
+  }
+}
+
+.edit--container {
+  background-color: #ad8786;
+}
+
+.todo__edite {
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 100%;
+  text-align: start;
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.completed{
+  text-decoration: line-through;
+  color:lightcoral;
+}
+
+.active{
+  background-color: #5e1414;
+  padding:0;
+  margin:0;
+  border-radius: 25px;
+  height: 5px;
+}

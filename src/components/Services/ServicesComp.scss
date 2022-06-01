@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Satisfy&display=swap");
+
+.services__container {
+  max-width: 30%;
+  min-width: 250px;
+  background-color: rgb(91, 217, 255);
+  color: rgb(244, 246, 248);
+  border-radius: 5px;
+  padding: 30px;
+  margin: 20px auto;
+  font-family: Satisfy, sans-serif;
+  text-shadow: 1px 3px 2px rgb(87, 84, 84);
+}
+
+.title{
+  margin:0 20px 20px;
+  letter-spacing: 5px;
+}
+
+.total__container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+font-family: sans-serif;
+padding-top: 15px;
+margin: 0 20px;
+font-weight: bold;
+
+}
+
+.isSelected {
+  background-color: #86f886;
+}
