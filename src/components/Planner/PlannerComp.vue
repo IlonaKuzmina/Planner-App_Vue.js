@@ -14,16 +14,13 @@
         </form>
       </div>
 
-      <div
-        v-for="(todo, index) in getTasksList()"
-        :key="todo.id"
-        class="todo__items"
-      >
+      <div v-for="(todo, index) in getTasksList()" :key="todo.id">
         <div v-if="!todo.isEditing" class="todo__item">
           <input
             type="checkbox"
             name="checkbox"
             id="checkbox"
+            :checked="currentFilter === 'Completed'"
             v-model="todo.isCompleted"
           />
           <div

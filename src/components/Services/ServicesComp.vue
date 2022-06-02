@@ -5,7 +5,7 @@
       v-for="service in services"
       :key="service.id"
       :buttonName="service.title"
-      :price="service.price"
+      :price="service.price.toFixed(2)"
       :currency="service.currency"
       v-model="service.isSelected"
       @click="isSelected(service)"
@@ -14,7 +14,7 @@
     <hr class="line" />
     <div class="total__container">
       <span>Total:</span>
-      <span>{{ currency }}{{ parseInt(total.toFixed(2)) }}</span>
+      <span>{{ currency }}{{ total.toFixed(2) }}</span>
     </div>
   </div>
 </template>

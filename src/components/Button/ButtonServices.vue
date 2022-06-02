@@ -14,7 +14,7 @@ export default defineComponent({
   props: {
     buttonName: String,
     currency: String,
-    price: Number,
+    price: String,
     btnClass: String,
   },
 });
