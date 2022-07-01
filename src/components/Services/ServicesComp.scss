@@ -12,20 +12,19 @@
   text-shadow: 1px 3px 2px rgb(87, 84, 84);
 }
 
-.title{
-  margin:0 20px 20px;
+.title {
+  margin: 0 20px 20px;
   letter-spacing: 5px;
 }
 
-.total__container{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-font-family: sans-serif;
-padding-top: 15px;
-margin: 0 20px;
-font-weight: bold;
-
+.total__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: sans-serif;
+  padding-top: 15px;
+  margin: 0 20px;
+  font-weight: bold;
 }
 
 .isSelected {

@@ -1,5 +1,5 @@
 <template>
-  <button class="btn__services" :class="{ btnClass }">
+  <button class="btn__services" :class="{ active: btnClass }">
     <span class="left__side">{{ buttonName }}</span>
     <span class="right__side">{{ currency }}{{ price }}</span>
   </button>
@@ -7,7 +7,6 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import "@/components/Button/ButtonComp.scss";
 
 export default defineComponent({
   name: "ButtonServices",
@@ -19,3 +18,5 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped lang="scss" src="./ButtonComp.scss"></style>

@@ -8,7 +8,6 @@
             class="input"
             type="text"
             placeholder="What is your plann for today?"
-            @keypress.enter="addTodo"
           />
           <ButtonComp buttonName="Add" @click="addTodo"></ButtonComp>
         </form>
@@ -34,7 +33,7 @@
           <button class="cancel__btn" @click="removeTodo(index)">X</button>
         </div>
 
-        <div class="todo__item edit--container" v-if="todo.isEditing">
+        <div v-else class="todo__item edit--container">
           <input class="todo__edite" v-model="todo.title" type="text" />
           <button class="cancel__btn" @click="saveEditedTodo(todo)">
             Save
@@ -77,7 +76,7 @@ export default defineComponent({
     return {
       newTodo: "",
       currentFilter: "",
-      idForTodo: 2,
+      idForTodo: 1,
       todos: [] as Todos[],
     };
   },
